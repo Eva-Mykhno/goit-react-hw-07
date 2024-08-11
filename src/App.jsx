@@ -21,10 +21,10 @@ const App = () => {
     <>
       <div className={s.wrapper}>
         <h1 className={s.title}>Phonebook</h1>
-        {loading && <h2>Loading...</h2>}
-        {error && <h2>Something went wrong!</h2>}
         <ContactForm />
         <SearchBox />
+        {loading && <h2>Loading...</h2>}
+        {error && <h2>Something went wrong!</h2>}
         <ContactList />
       </div>
     </>
